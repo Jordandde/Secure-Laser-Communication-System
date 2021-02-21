@@ -11,7 +11,7 @@ enum State{START, GOT1, GOT2, GOT0, NEXT, DONE};
 GPIO_Handle initializeGPIO()
 {
 		
-	//This is the same initialization that was done in Lab 2
+	
 	GPIO_Handle gpio;
 	gpio = gpiolib_init_gpio();
 	if(gpio == NULL)

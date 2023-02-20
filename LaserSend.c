@@ -418,17 +418,8 @@ int main(const int argc, const char* const argv[])
 
     int timer = 0; // timer. Not using gettime methods because no need for precise timing here
 
-    /*while (i)
-    {
-        if (timer >= 1000000 * delay)
-        {
-            i = 0; //break while loop after duration has elapsed by setting i to 0;
-        }
-        usleep(1000); //this will act as a (rough) timer. Make sure argument of usleep is equal to how much timer is incremented by
-        timer += 1000;
-    }
-    printf("hi");
-    */for (int j = 0; j < len; j++) //loop to send laser pulses using "Send" function
+  
+    for (int j = 0; j < len; j++) //loop to send laser pulses using "Send" function
     {
 	printf("%d\n", input[j]);
         Send(gpio, input[j], configFile, logFile, programName, timeout);
